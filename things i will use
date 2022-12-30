@@ -1,0 +1,23 @@
+  //This is for input number with comma
+  <script>
+  var inputField = document.getElementById('amount')  
+inputField.oninput = function(){
+            var removeChar = this.value.replace(/[^0-9\.]/g, '') // This is to remove alphabets and special characters.
+            // console.log(removeChar);
+            var removeDot = removeChar.replace(/\./g, '') // This is to remove "DOT"
+            this.value = removeDot
+    
+            var formatedNumber = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            // console.log(formatedNumber);
+            this.value = formatedNumber
+            
+        }
+  </script>
+
+// this is for generating product code. create a if statement that says if the numbers are the as someone else, generate new ones
+echo substr(sha1(mt_rand()),17,6);
+$permitted_chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+// Output: 54esmdr0qf 
+echo substr(str_shuffle($permitted_chars), 0, 10);
+
+//
