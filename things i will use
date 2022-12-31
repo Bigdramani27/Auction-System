@@ -20,4 +20,49 @@ $permitted_chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // Output: 54esmdr0qf 
 echo substr(str_shuffle($permitted_chars), 0, 10);
 
-//
+//share drop down
+<div class="mt-8">
+              <!-- dropdown -->
+              <div class="dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Share
+                </a>
+
+                <ul class="dropdown-menu" >
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-twitter me-2"></i>Twitter</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+  /// uploading photos info
+  <div class="border-bottom py-4 mb-4">
+                        <h5>Add a photo or video</h5>
+                        <p>Shoppers find images and videos more helpful than text alone.</p>
+                        <!-- form -->
+                        <form action="#" class=" dropzone profile-dropzone">
+                          <div class="fallback">
+                            <input name="file" type="file" multiple />
+                          </div>
+                        </form>
+
+                      </div>
+
+
+                      
+
+
+
+
+• 0 ads
+
+ • 0 ads
+
+ • 0 ads
+
+ • 0 ads
+ • 0 ads
+ • 0 ads
+ • 0 ads

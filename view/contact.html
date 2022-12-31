@@ -31,6 +31,13 @@ background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
 background-clip: text;
 -webkit-background-clip: text;
 }
+.testing{
+              padding: 35px 35px;
+              border-radius: 10px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              box-shadow: 0px 6px 18px 0px rgba(16, 5, 54, 0.17);
+  }
 </style>
 <!-- navigation -->
 <header>
@@ -79,27 +86,15 @@ background-clip: text;
         </div>
         <div class="col-xxl-6 col-lg-5 d-none d-lg-block">
           <form action="#">
-            <div class="input-group ">
-              <input class="form-control rounded-3" type="search" value="Search for products" id="searchInput">
-              <span class="input-group-append">
-                <button class="btn bg-white border border-start-0 ms-n10" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-search">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                  </svg>
-                </button>
-              </span>
-            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" id="inputModalSearch" name="query" placeholder="Search ..." >
+              <button type="submit" name=search class="input-group-text bg-success text-light">
+                  <i class="fa fa-fw fa-search text-white"></i>
+              </button>
+          </div>
           </form>
         </div>
         <div class="col-md-2 col-xxl-3 d-none d-lg-block">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn  btn-outline-gray-400 text-muted" data-bs-toggle="modal"
-            data-bs-target="#locationModal">
-            <i class="feather-icon icon-map-pin me-2"></i>Location
-          </button>
         </div>
         <div class="col-md-2 col-xxl-1 text-end d-none d-lg-block">
           <div class="list-inline">
@@ -143,19 +138,19 @@ background-clip: text;
                 Categories
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href=""><img src='../images/01.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/01.png' style="height:30px; width:30px;">
                     &nbsp; Cars</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/02.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/02.png' style="height:30px; width:30px;">
                     &nbsp; Jewelries</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/03.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/03.png' style="height:30px; width:30px;">
                     &nbsp; Watches</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/04.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/04.png' style="height:30px; width:30px;">
                     &nbsp; Electronics</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/05.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/05.png' style="height:30px; width:30px;">
                     &nbsp; Sports</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/06.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/06.png' style="height:30px; width:30px;">
                     &nbsp; Houses</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/07.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/07.png' style="height:30px; width:30px;">
                     &nbsp; Art</a></li>
               </ul>
             </li>
@@ -190,19 +185,19 @@ background-clip: text;
                 Categories
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href=""><img src='../images/01.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/01.png' style="height:30px; width:30px;">
                     &nbsp; Cars</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/02.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/02.png' style="height:30px; width:30px;">
                     &nbsp; Jewelries</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/03.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/03.png' style="height:30px; width:30px;">
                     &nbsp; Watches</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/04.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/04.png' style="height:30px; width:30px;">
                     &nbsp; Electronics</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/05.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/05.png' style="height:30px; width:30px;">
                     &nbsp; Sports</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/06.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/06.png' style="height:30px; width:30px;">
                     &nbsp; Houses</a></li>
-                <li><a class="dropdown-item" href=""><img src='../images/07.png' style="height:30px; width:30px;">
+                <li><a class="dropdown-item" href="category.html"><img src='../images/07.png' style="height:30px; width:30px;">
                     &nbsp; Art</a></li>
               </ul>
             </li>
@@ -213,13 +208,18 @@ background-clip: text;
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#" role="button" aria-expanded="false">
+              <a class="nav-link" href="about.html" role="button" aria-expanded="false">
                 About Us
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button">
+              <a class="nav-link" href="contact.html" role="button">
                 Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" role="button" aria-expanded="false">
+                About Us
               </a>
             </li>
           </ul>
@@ -229,83 +229,17 @@ background-clip: text;
 
   </nav>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-body p-6">
-        <div class="d-flex justify-content-between align-items-start ">
-          <div>
-            <h5 class="mb-1" id="locationModalLabel">Choose your Delivery Location</h5>
-            <p class="mb-0 small">Enter your address and we will specify the offer you area. </p>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="my-5">
-          <input type="search" class="form-control" placeholder="Search your area">
-        </div>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <h6 class="mb-0">Select Location</h6>
-          <a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Clear All</a>
-
-
-        </div>
-        <div>
-          <div data-simplebar style="height:300px;">
-            <div class="list-group list-group-flush">
-
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action active">
-                <span>Alabama</span><span>Min:$20</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Alaska</span><span>Min:$30</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Arizona</span><span>Min:$50</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>California</span><span>Min:$29</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Colorado</span><span>Min:$80</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Florida</span><span>Min:$90</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Arizona</span><span>Min:$50</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>California</span><span>Min:$29</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Colorado</span><span>Min:$80</span></a>
-              <a href="#"
-                class="list-group-item d-flex justify-content-between align-items-center px-2 py-3 list-group-item-action">
-                <span>Florida</span><span>Min:$90</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 <main>
   <section class="my-lg-14 my-8">
       <!-- container -->
     <div class="container">
       <div class="row">
-          <!-- col -->
         <div class="offset-lg-2 col-lg-8 col-12">
+          <div class="testing">
           <div class="mb-8">
-              <!-- heading -->
             <h1 style="text-align:center">Support Center</h1>
-            <p class="alert alert-success text-danger">*** Please state all your inquiries. We will get back to you as soon as possible!</p>
+            <p class="alert alert-success text-danger text-center fw-bold">*** Please state all your inquiries. We will get back to you as soon as possible!</p>
           </div>
-          <!-- form -->
           <form class="row">
               <!-- input -->
             <div class="col-md-6 mb-3">
@@ -344,66 +278,67 @@ background-clip: text;
         </div>
       </div>
     </div>
+    </div>
 
   </section>
 </main>
 
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-          <div class="col-md-3">
-            <h3 class="mb-4 text-white">Categories</h3>
-            <ul class="nav flex-column border-top py-4">
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/01.png' style="height:30px; width:30px"> Cars</span></a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/02.png' style="height:30px; width:30px"> Jewelries</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/03.png' style="height:30px; width:30px"> Watches</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/04.png' style="height:30px; width:30px"> Electronics</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/05.png' style="height:30px; width:30px"> Sports</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/06.png' style="height:30px; width:30px"> Houses</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link"><img src='../images/07.png' style="height:30px; width:30px"> Art</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="mb-4 text-white">Further Information</h3>
-            <ul class="nav flex-column border-top py-4">
-              <li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link">Want to donate?</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link">Want to be a seller?</a></li>
-              <li class="nav-item mb-2"><a href="#!" class="nav-link">Want to Report?</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="mb-4 text-white">Get to know us</h3>
-            <ul class="nav flex-column border-top py-4">
-              <li class="nav-item mb-2"><a href="about.html" class="nav-link">Company</a></li>
-              <li class="nav-item mb-2"><a href="about.html" class="nav-link">About</a></li>
-              <li class="nav-item mb-2"><a href="contact.html" class="nav-link">Help Center</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="mb-4 text-white">Reach us on</h3>
-            <ul class="nav flex-column border-top py-4">
-              <li class="nav-item mb-2"><a href="https://wa.me/233553058208"><i class="fa fa-twitter fa-2x" style="color:#4169e1"></i> <span class='text-white'>Twitter</span></a></li>
-              <li class="nav-item mb-2"><a href="https://wa.me/233553058208"><i class="fa fa-instagram fa-2x"></i><span class='text-white'>&nbsp; Instagram</span></a></li>
-              <li class="nav-item mb-2">  <a href="https://wa.me/233553058208"><i class="fa fa-whatsapp fa-2x"style="color:green"></i> <span class='text-white'>&nbsp;WhatsApp</span></a></li>
-            </ul>
-          </div>
-        
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+            <div class="col-md-3">
+              <h3 class="mb-4 text-white">Categories</h3>
+              <ul class="nav flex-column border-top py-4">
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/01.png' style="height:30px; width:30px"> Cars</span></a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/02.png' style="height:30px; width:30px"> Jewelries</a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/03.png' style="height:30px; width:30px"> Watches</a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/04.png' style="height:30px; width:30px"> Electronics</a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/05.png' style="height:30px; width:30px"> Sports</a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/06.png' style="height:30px; width:30px"> Houses</a></li>
+                <li class="nav-item mb-2"><a href="category.html" class="nav-link"><img src='../images/07.png' style="height:30px; width:30px"> Art</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-4 text-white">Further Information</h3>
+              <ul class="nav flex-column border-top py-4">
+                <li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
+                <li class="nav-item mb-2"><a href="#!" class="nav-link">Want to donate?</a></li>
+                <li class="nav-item mb-2"><a href="../login/seller_register.html" class="nav-link">Want to be a seller?</a></li>
+                <li class="nav-item mb-2"><a href="#!" class="nav-link">Want to Report?</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-4 text-white">Get to know us</h3>
+              <ul class="nav flex-column border-top py-4">
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link">Company</a></li>
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item mb-2"><a href="contact.html" class="nav-link">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="mb-4 text-white">Reach us on</h3>
+              <ul class="nav flex-column border-top py-4">
+                <li class="nav-item mb-2"><a href="https://wa.me/233553058208"><i class="fa fa-twitter fa-2x" style="color:#4169e1"></i> <span class='text-white'>Twitter</span></a></li>
+                <li class="nav-item mb-2"><a href="https://wa.me/233553058208"><i class="fa fa-instagram fa-2x"></i><span class='text-white'>&nbsp; Instagram</span></a></li>
+                <li class="nav-item mb-2">  <a href="https://wa.me/233553058208"><i class="fa fa-whatsapp fa-2x"style="color:green"></i> <span class='text-white'>&nbsp;WhatsApp</span></a></li>
+              </ul>
+            </div>
+          
+        </div>
       </div>
-    </div>
-    <div class="border-top py-4">
-      <div class="row align-items-center" >
-        <div class="col-md-12" style="text-align:center;"><span class="text-white">2022 © Copyright - All Rights Reserved. |
-         Created by <a href="mailto:alhassan.dramani@ashesi.edu.gh" style="color:yellow;">Dramani Alhassan</a></span></div>
+      <div class="border-top py-4">
+        <div class="row align-items-center" >
+          <div class="col-md-12" style="text-align:center;"><span class="text-white">2022 © Copyright - All Rights Reserved. |
+           Created by <a href="mailto:alhassan.dramani@ashesi.edu.gh" style="color:yellow;">Dramani Alhassan</a></span></div>
+        </div>
       </div>
-    </div>
-</footer>
+  </footer>
   <!-- Javascript-->
   <!-- Libs JS -->
-<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="ssets/libs/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/jquery-countdown/dist/jquery.countdown.min.js"></script>
 <script src="assets/libs/slick-carousel/slick/slick.min.js"></script>
 <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
 <script src="assets/libs/nouislider/dist/nouislider.min.js"></script>
@@ -420,6 +355,5 @@ background-clip: text;
 <!-- Theme JS -->
 <script src="assets/js/theme.min.js"></script>
   <!-- choose one -->
-
 </body>
 </html>
