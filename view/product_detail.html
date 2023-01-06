@@ -30,6 +30,11 @@
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
   -webkit-background-clip: text;
+} .accordion-button:not(.collapsed)::after {
+  background-image: url("assets/images/slider/plus.png");
+}
+.accordion-button::after {
+  background-image: url("assets/images/slider/minus.png");
 }
   </style>
   <!-- navigation -->
@@ -398,8 +403,8 @@
             </li>
             <!-- nav item -->
             <li class="nav-item" role="presentation">
-             <button class="nav-link" id="reviews-tab" data-bs-toggle="tab"
-                data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane"
+             <button class="nav-link" id="faq" data-bs-toggle="tab"
+                data-bs-target="#faq-pane" type="button" role="tab" aria-controls="faq-pane"
                 aria-selected="false">FAQS</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -419,11 +424,13 @@
                   <h4 class="mb-1">Buying/Biding of Product</h4>
                   <p class="mb-0">All the products here are untested. When you bid and become the winner or you buy the product,
                     please check the product and ensure that they meet your needs. 
+                    <br>Bear in mind that not all product are with warranty
+                    There would be no refund or adjustment after purchasing the product
                   </p>
                 </div>
                 <div class="mb-5">
                   <h5 class="mb-1">Safety Tips</h5>
-                  <p class="mb-0">Please meet the seller at a safe public place when making payment or inspecting the product. <strong>We are not entitle to deliver products to consumers</strong>
+                  <p class="mb-0">Please meet the seller at a safe public place when making payment or inspecting the product. <strong>We are not entitle to deliver products to consumers</strong>.
                   Check the documentation before you proceed to pay.
                   </p>
                 </div>
@@ -435,10 +442,17 @@
                     </p>
                 </div>
                 <div class="mb-5">
-                  <h5 class="mb-1">Buying rules</h5>
+                  <h5 class="mb-1">Buying Rules</h5>
                   <p class="mb-0">
                     1. Once someone buys the product, the auction will close. Anyone who bided on that specific product will lose the chance to get the product. 
-                    2. Once you buy the product, you have 2 days to make payment. Failure to do so will lead to a ban on your account.
+                    <br>2. Once you buy the product, you have 2 days to make payment. Failure to do so will lead to a ban on your account.
+                    <br>3. Buyers will receive an email notification or a phone call from the seller after confirming purchase.
+                  </p>
+                </div>
+                <div class="mb-5">
+                  <h5 class="mb-1">Notes</h5>
+                  <p class="mb-0">
+                    Please carefully review the product before purchasing or bidding. You are doing this in your own accord. We are not responsible for any problems that might come with the product(s).
                   </p>
                 </div>
               </div>
@@ -497,20 +511,225 @@
               </div>
             </div>
             <!-- tab pane -->
-            <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+            <div class="tab-pane fade" id="faq-pane" role="tabpanel" aria-labelledby="faq" tabindex="0">
               <div class="my-8">
-                <!-- row -->
-                <div class="row">                
-                    </div>
-                  </div>
+              <div class="row" style="width:80%; margin-left:auto; margin-right:auto;">
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+       How to start bidding?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          You can start bidding by logging into your account or registering for an account and then logging in.
+          After that, proceed to choose the product you want and specify how much you will like to bid it for.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           Should I make some form of payment to the Seller before seeing the product?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Please do not make any payment until you have seen the product in person. You should only purchase the product if it satisfies you. You are not obliged to make a payment right after seeing the product.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           Should I make some form of payment to the Seller before seeing the product?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Whether delivery is free or not can only be discussed with you and the seller after you purchase the product or you became the winner.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           How to register to bid in an auction?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          On the top right corner of any page, click on register. Once you click it, you can follow the procedure to create a successful account.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           How will I know if my bid was successful?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          All successful bidders can confirm their winning bid by checking their emails or dashboard. They will be notified of their winning bid after the auction closes.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           What happens if I bid on the wrong lot?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Unfortunately, right now, you cannot do anything about it. Before you bid for any product, there would be a prompt on whether you are sure to bid for the item. The same thing goes for anyone who plans on buying a bidding product.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           How will I get my product if I win?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          You would receive the seller's contact through your mail or text message. You can make arrangements with the seller on how to get your product.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           Should I make some form of payment to the Seller before seeing the product?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Look at the navigation bar which says "contact" and click on it. Or look at the bottom of any page and click on "Help Center"
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           How do I know if I'm the high bidder?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          You will know if you are the highest bidder by clicking on the product that you bid. You would see a tab called "bidders" in-between description and question. Click on "bidders," and you will know where you rank.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           What are the tips for winning?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          The tip is to bid high for nobody to try and bid. Or you can buy it, and you will win the product.
+        </div>
+     </div>
+  </div>
+ </div>
+ <div class="accordion" id="accordionExample" style="margin-top:20px">
+  <div class="accordion-item">
+     <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#collapseOne" style='background-color: #156e96; color:white'aria-expanded="true" aria-controls="collapseOne">
+           Where do I access my favorites items?
+        </button>
+     </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show"
+        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          On the right corner, click on the heart icon. It will lead you to your favorites products.
+        </div>
+     </div>
+  </div>
+ </div>
+ </div>
+ </div>
                 </div>
       <!-- tab pane -->
       <div class="tab-pane fade" id="bid-history-tab-pane" role="tabpanel" aria-labelledby="bid-history-tab" tabindex="0">
         <div class="my-8">
-          <!-- row -->
-          <div class="row">                
-              </div>
+          <div class="row">
+            <div class="col-12">
+              <h4 class="mb-4">Details</h4>
             </div>
+            <div class="col-12 col-lg-12">
+              <table class="table table-striped">
+                <!-- table -->
+                <tbody>
+                  <tr>
+                    <th>Bidder</th>
+                    <th>Date/Time</th>
+                    <th>Amount (GH₵)</th>
+                  </tr>
+                  <tr>
+                    <td>f*****t</td>
+                    <td>01/04/2023 02:04:48 AM</td>
+                    <td>4000</td>
+                  </tr>
+                  <tr>
+                    <td>d*****s</td>
+                    <td>01/03/2023 06:04:48 PM</td>
+                    <td>3500</td>
+                  </tr>
+                  <tr>
+                    <td>a*****d</td>
+                    <td>01/03/2023 06:04:40 PM</td>
+                    <td>3000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
           </div>
            <!--tab pane end-->
           </div>
@@ -940,11 +1159,19 @@
 }
   </script>
   <script>
-    var validate = function(e) {
-        var t = e.value;
-        e.value = (t.indexOf(".") >= 0) ? (t.substr(0, t.indexOf(".")) + t.substr(t.indexOf("."), 3)) : t;
-    }
-</script>
+    var inputField = document.getElementById('amount')  
+  inputField.oninput = function(){
+              var removeChar = this.value.replace(/[^0-9\.]/g, '') // This is to remove alphabets and special characters.
+              // console.log(removeChar);
+              var removeDot = removeChar.replace(/\./g, '') // This is to remove "DOT"
+              this.value = removeDot
+      
+              var formatedNumber = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+              // console.log(formatedNumber);
+              this.value = formatedNumber
+              
+          }
+    </script>
 </body>
 
 </html>
