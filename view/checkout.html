@@ -252,14 +252,10 @@
                               Home
                             </label>
                           </div>
-                          <!-- address -->
-                          <address> <strong>Jitu Chauhan</strong> <br>
-
-                            4450 North Avenue Oakland, <br>
-
-                            Nebraska, United States,<br>
-
-                            <abbr title="Phone">P: 402-776-1106</abbr></address>
+                           <strong>Dramani Alhassan</strong> <br>
+                            1 Avenue Berekuso, <br>
+                            Eastern Region, Ghana<br>
+                            +233 548342821
                             <div class="mt-4">
                               <a href="#" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#EditModal">Edit </a>
                               </div>
@@ -477,13 +473,12 @@
         </div>
         <div class="modal-body">
           <h6>Are you sure you want to delete this address?</h6>
-          <p class="mb-6">Jitu Chauhan<br>
+          <p class="mb-6">Dramani Alhassan<br>
 
-            4450 North Avenue Oakland, <br>
+            1 Avenue Berekuso <br>
+Eastern Reginon, Ghana<br>
 
-            Nebraska, United States,<br>
-
-            402-776-1106</p>
+           +233 548342821</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-gray-400" data-bs-dismiss="modal">Cancel</button>
@@ -512,7 +507,14 @@
           </div>
           <!-- row -->
           <div class="row g-3">
-            <!-- col -->
+            <div class="col-12">
+              <select class="form-select">
+                <option selected=""> Please select the type of address</option>
+                <option value="1">Home</option>
+                <option value="2">Office</option>
+                <option value="3">Business</option>
+              </select>
+            </div>
             <div class="col-12">
               <input type="text" class="form-control" placeholder="First name" aria-label="First name" required="">
             </div>
@@ -795,31 +797,6 @@
               <button class="btn btn-primary" type="button">Save Address</button>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-   <!-- Modal -->
-   <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="deleteModalLabel">Delete address</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h6>Are you sure you want to delete this address?</h6>
-          <p class="mb-6">Jitu Chauhan<br>
-
-            4450 North Avenue Oakland, <br>
-
-            Nebraska, United States,<br>
-
-            402-776-1106</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-gray-400" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Delete</button>
         </div>
       </div>
     </div>
