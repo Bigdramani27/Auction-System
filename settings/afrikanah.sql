@@ -64,13 +64,13 @@ CREATE TABLE `categories` (
 
 CREATE TABLE `customer` (
   `customer_id` int(11) NOT NULL,
-  `customer_name` varchar(100) NOT NULL,
+  `customer_fname` varchar(100) NOT NULL,
+  `customer_lname` varchar(100) NOT NULL,
   `customer_email` varchar(50) NOT NULL,
   `customer_pass` varchar(150) NOT NULL,
   `customer_country` varchar(30) NOT NULL,
-  `customer_city` varchar(30) NOT NULL,
+  `customer_address` varchar(30) NOT NULL,
   `customer_contact` varchar(15) NOT NULL,
-  `customer_image` varchar(100) DEFAULT NULL,
   `user_role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -128,14 +128,19 @@ CREATE TABLE `products` (
   `product_title` varchar(200) NOT NULL,
   `product_price` double NOT NULL,
   `product_desc` varchar(500) DEFAULT NULL,
-  `product_image` varchar(100) DEFAULT NULL,
   `product_keywords` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+CREATE TABLE `images` (
+`product_image1` int(11) not null,
+`product_image2` int(11) not null,
+`product_image3` int(11) not null,
+`product_image4` int(11) not null
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Indexes for dumped tables
 --
-
 --
 -- Indexes for table `brands`
 --

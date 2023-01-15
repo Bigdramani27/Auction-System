@@ -1,0 +1,11 @@
+
+<script src='https://widget.paybox.com.co/js/app.js' defer></script>
+<paybox-button-widget merchant-key="f4c6c5ec-c9eb-4f26-bb5b-85ab46203ac5" total="10.99" currency="GHS"> Click PayBox Button</paybox-button-widget>
+
+
+const obscureEmail = email => {
+    const [name, domain] = email.split("@");
+    return `${name[0]}${new Array(name.length).join("*")}@${domain}`;
+  };
+  
+  const email = obscureEmail("toddmotto@website.com");
