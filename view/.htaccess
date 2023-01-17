@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+ErrorDocument 404 http://localhost/Auction-System/view/404error.html
+=======
 ErrorDocument 404 http://localhost/Afrikanah/view/404error.html
+>>>>>>> 048a4fcb46004247c25c03a80e63bbb8fc021a7b
